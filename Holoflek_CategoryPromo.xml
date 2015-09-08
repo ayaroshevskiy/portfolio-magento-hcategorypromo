@@ -1,0 +1,11 @@
+<config>
+  <modules>
+    <Holoflek_CategoryPromo>
+      <active>true</active>
+      <codePool>local</codePool>
+        <depends>
+            <Mage_Cms />
+        </depends>
+    </Holoflek_CategoryPromo>
+  </modules>
+</config>

@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    Mage
+ * @package     Mage_Catalog
+ * @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+-->
+<widgets>
+    <holoflek_category_promo type="holoflek_categorypromo/widget_promo" translate="name description" module="holoflek_categorypromo">
+        <name>Category Promo Widget</name>
+        <description>Promo block for a Specified Category</description>
+        <parameters>
+            <id_path translate="label">
+                <visible>1</visible>
+                <required>1</required>
+                <label>Category</label>
+                <type>label</type>
+                <helper_block>
+                    <type>adminhtml/catalog_category_widget_chooser</type>
+                    <data>
+                        <button translate="open">
+                            <open>Select Category...</open>
+                        </button>
+                    </data>
+                </helper_block>
+                <sort_order>10</sort_order>
+            </id_path>
+            <title_color translate="label">
+                <label>Title Color</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>dark</value>
+                <values>
+                    <default translate="label">
+                        <value>dark</value>
+                        <label>Dark</label>
+                    </default>
+                    <link_inline translate="label">
+                        <value>light</value>
+                        <label>Light</label>
+                    </link_inline>
+                </values>
+            </title_color>
+            <description_color translate="label">
+                <label>Description Color</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>dark</value>
+                <values>
+                    <default translate="label">
+                        <value>dark</value>
+                        <label>Dark</label>
+                    </default>
+                    <link_inline translate="label">
+                        <value>light</value>
+                        <label>Light</label>
+                    </link_inline>
+                </values>
+            </description_color>
+            <width translate="label">
+                <label>Block Width</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>full</value>
+                <values>
+                    <default translate="label">
+                        <value>full</value>
+                        <label>Full Width Block</label>
+                    </default>
+                    <link_inline translate="label">
+                        <value>half</value>
+                        <label>Half Width Block</label>
+                    </link_inline>
+                </values>
+            </width>
+            <template translate="label">
+                <label>Template</label>
+                <visible>0</visible>
+                <type>hidden</type>
+                <value>holoflek/categorypromo/widget/promo.phtml</value>
+            </template>
+        </parameters>
+    </holoflek_category_promo>
+</widgets>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Holoflek_CategoryPromo>
+            <version>0.1.0</version>
+        </Holoflek_CategoryPromo>
+    </modules>
+    <global>
+        <blocks>
+            <holoflek_categorypromo>
+                <class>Holoflek_CategoryPromo_Block</class>
+            </holoflek_categorypromo>
+        </blocks>
+        <helpers>
+            <holoflek_categorypromo>
+                <class>Holoflek_CategoryPromo_Helper</class>
+            </holoflek_categorypromo>
+        </helpers>
+    </global>
+</config>

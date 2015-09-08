@@ -1,0 +1,4 @@
+# Holoflek_CategoryPromo
+code                        app/code/local/Holoflek/CategoryPromo/
+frontend/template/*         app/design/frontend/base/default/template/holoflek/categorypromo
+Holoflek_CategoryPromo.xml  app/etc/modules/Holoflek_CategoryPromo.xml
